@@ -4,7 +4,9 @@
   "description": "MDX + Next = ❤ Slides",
   "scripts": {
     "start": "mdx-deck deck.mdx",
+	"prebuild": "rimraf dist",
     "build": "mdx-deck build deck.mdx",
+	"postbuild": "cpy --parents \"public/**\" ./dist",
     "pdf": "mdx-deck pdf deck.mdx",
     "image": "mdx-deck screenshot deck.mdx",
     "help": "mdx-deck"
@@ -13,7 +15,9 @@
   "author": "Rob Skidmore",
   "license": "MIT",
   "devDependencies": {
-    "mdx-deck": "^1.6.7"
+    "cpy-cli": "^2.0.0",
+    "mdx-deck": "^1.6.7",
+    "rimraf": "^2.6.2"
   },
   "name": "mdx-next",
   "dependencies": {
