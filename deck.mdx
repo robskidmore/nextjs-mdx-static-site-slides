@@ -11,9 +11,12 @@ export { swiss as theme } from './theme'
 </Head>
 
 # Building a Static Site Generator with Next.js and MDX
-repo - [rskd.me/next-mdx](https://rskd.me/next-mdx)
+### Code - [rskd.me/next-mdx](https://rskd.me/next-mdx)
+### Slides - [rskd.me/next-mdx-slides](https://rskd.me/next-mdx-slides)
 
-slides - [rskd.me/next-mdx-slides](https://rskd.me/next-mdx-slides)
+```notes
+Who has heard of MDX? Next?
+```
 
 ---
 
@@ -30,7 +33,12 @@ slides - [rskd.me/next-mdx-slides](https://rskd.me/next-mdx-slides)
 
 ---
 
-## What is Next.js?
+## What is [Next.js](https://nextjs.org/)?
+Similar to create-react-app
+- Code splitting
+- Universal rendering
+- Hot reloading
+- Routing
 
 ---
 
@@ -51,9 +59,14 @@ Content Types (Landing Page, Post)
 Styling
 Typography
 ```
+
 ---
 
 ## What does the code look like?
+- [posts](https://github.com/robskidmore/nextjs-mdx-static-site/tree/master/posts) & [landingPages](https://github.com/robskidmore/nextjs-mdx-static-site/tree/master/landingPages) - Directories that holds the .mdx files
+- [pages/posts.js](https://github.com/robskidmore/nextjs-mdx-static-site/blob/master/pages/posts.js) & [pages/landingPages.js](https://github.com/robskidmore/nextjs-mdx-static-site/blob/master/pages/landingPages.js) - Templates that render the posts
+- [exportPosts.js](https://github.com/robskidmore/nextjs-mdx-static-site/blob/master/utils/exportPosts.js) - Builds the posts index
+- [next.config.js](https://github.com/robskidmore/nextjs-mdx-static-site/blob/master/next.config.js) - Sets up exportPath for static export
 
 ```notes
 templates
